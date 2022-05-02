@@ -146,6 +146,9 @@ void TestNoncopiableErase() {
     }
     v.Resize(10);
 
+    {
+        //SimpleVector<X> vv(5);
+    }
     auto it = v.Erase(v.begin());
     assert(it->GetX() == 1);
     cout << "Done!" << endl << endl;
